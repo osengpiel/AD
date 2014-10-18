@@ -8,10 +8,6 @@
 
 \title{Aufgabenblatt 1 - Aufgabe 1}
 
-\author{Oliver Sengpiel \\
-        Laura Schüttpelz \\
-        Merlinde Claudia Tews}
-
 \begin{document}
 
 \maketitle
@@ -51,14 +47,15 @@ Analog dazu sind die folgenden Beweise.
 Hier muss noch ein Beweis rein.
 
 \underline{$\log n \asymp \log n^3$:}\\
-$\log n \in \mathcal{O}$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
+$\log n \in \mathcal{O}(\log n^3)$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
 n}{\log n^3} < \infty$ gilt. Für den Grenzwert von $\frac{\log n}{\log n^3}$ für
-$n \to \infty$ gilt:
+n \to \infty$ gilt:
 \[
     \lim_{n \to \infty} \frac{\log n}{\log n^3} = \frac{\log n}{3 \cdot \log n}
     = \frac{1}{3}
 \]
 woraus folgt, dass die Behauptung wahr ist.
+
 
 \item[(b)]
 
