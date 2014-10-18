@@ -1,4 +1,5 @@
 
+
 \documentclass{article}
 
 \usepackage[utf8]{inputenc} \usepackage[ngerman]{babel}
@@ -85,7 +86,13 @@ woraus folgt, dass die Behauptung wahr ist.
 			< \infty 
 	\end{align*}
 \item[(iii)]
-blubblubb
+\begin{align*}
+\text{Behauptung: } &f_c(n) := \sum_{i=0}^n c^i: f_c(n) \in \Theta(n) \Leftrightarrow c=1 \\
+&0 < lim_{n \rightarrow \infty} inf \frac{f_c(n)}{n} \le lim_{n \rightarrow \infty} sup \frac{f_c(n)}{n} < \infty \\
+&0 < lim_{n \rightarrow \infty} inf \frac{\sum_{i=0}^n c^i}{n} \le lim_{n \rightarrow \infty} sup \frac{\sum_{i=0}^i c^i}{n} < \infty \\
+&\text{Für } c > 1 \text{geht } \frac{f_c(n)}{n} \text{gegen } \infty \text{, für } c > 0 \text{geht }  \frac{f_c(n)}{n} \text{gegen 0.} \\
+\text{Also muss } c = 1 \text{ genau dann, wenn } f_c(n) \in \Theta(n).
+\end{align*}
 \end{enumerate}
 
 \end{enumerate}
