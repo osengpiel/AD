@@ -49,7 +49,7 @@ Hier muss noch ein Beweis rein.
 \underline{$\log n \asymp \log n^3$:}\\
 $\log n \in \mathcal{O}(\log n^3)$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
 n}{\log n^3} < \infty$ gilt. Für den Grenzwert von $\frac{\log n}{\log n^3}$ für
-n \to \infty$ gilt:
+$n \to \infty$ gilt:
 \[
     \lim_{n \to \infty} \frac{\log n}{\log n^3} = \frac{\log n}{3 \cdot \log n}
     = \frac{1}{3}
@@ -64,14 +64,17 @@ woraus folgt, dass die Behauptung wahr ist.
 blub
 \item[(ii)]
 	\begin{align*}
-		Behauptung: $f \in O(g) &\Rightarrow g \in \omega(f)$  
-		\[&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
-			\le \infty &\Rightarrow lim_{n \rightarrow \infty} inf 
-			\frac{f(n)}{g(n)} \Leftrightarrow g \in o(f)\] 
-		\[&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
-			\le \infty &\Rightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} = 0\] 
-		\[&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} = 0 
-			\le \infty \]
+		\text{Behauptung:} f \in O(g) &\Rightarrow g \in \omega(f) \\
+		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
+			\le \infty \\
+                &\Rightarrow lim_{n \rightarrow \infty} inf 
+			\frac{f(n)}{g(n)} \Leftrightarrow g \in o(f) \\
+		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
+			\le \infty \\
+                &\Rightarrow lim_{n \rightarrow \infty} sup
+                        \frac{f(n)}{g(n)} = 0 \\
+		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} = 0 
+			\le \infty 
 	\end{align*}
 \item[(iii)]
 blubblubb
