@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} \usepackage[ngerman]{babel}
+
+\usepackage{amssymb} \usepackage{amsmath}
+
+\usepackage{latexsym}
+
+\title{Aufgabenblatt 1 - Aufgabe 1}
+
+\author{Oliver Sengpiel \\
+        Laura Schüttpelz \\
+        Merlinde Claudia Tews}
+
+\begin{document}
+
+\maketitle
+
+% blablabla
+\begin{enumerate}
+\item[(a)]
+    \begin{align*}
+        &\frac{1}{n} \prec 1 \prec \log \log n \prec \log n \asymp \log n^3 \prec
+        \log n^{\log n} \prec n \log n \\
+        &\text{und} \quad n \log n \prec n^{0.01} \prec \sqrt{n} \prec n^8
+        \prec 2^n \prec 8^n \prec n^n \prec n!
+    \end{align*}
+\end{enumerate}
+
+\underline{Beiweise:}\\
+Zunächst gilt es zu beweisen, dass
+\[
+    \frac{1}{n} \in o(1) \Leftrightarrow \lim_{n \to \infty}
+    \frac{\left( \frac{1}{n} \right)}{1} = 0
+\]
+gilt. Der Beweis ist trivial, denn es ist
+\begin{align*}
+    &\lim_{n \to \infty} \frac{\left( \frac{1}{n} \right)}{1} \\
+    \Leftrightarrow &\lim_{n \to \infty} \frac{1}{n} = 0 \quad \quad \square
+\end{align*}
+und daraus folgt, dass $\frac{1}{n} \prec 1$ gilt.\\
+Analog dazu sind die folgenden Beweise.
+
+\underline{$1 \prec \log \log n$:}
+\[
+    \frac{1}{\log \log n} \underset{n \to \infty}{\longrightarrow} 0 \Rightarrow
+    1 \prec \log \log n \qquad \square
+\]
+
+\underline{$\log \log n \prec \log n$:}
+Hier muss noch ein Beweis rein.
+
+\underline{$\log n \asymp \log n^3$:}\\
+$\log n \in \mathcal{O}$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
+n}{\log n^3} < \infty$ gilt. Für den Grenzwert von $\frac{\log n}{\log n^3}$ für
+$n \to \infty$ gilt:
+\[
+    \lim_{n \to \infty} \frac{\log n}{\log n^3} = \frac{\log n}{3 \cdot \log n}
+    = \frac{1}{3}
+\]
+woraus folgt, dass die Behauptung wahr ist.
+
+\end{document}
