@@ -8,10 +8,6 @@
 
 \title{Aufgabenblatt 1 - Aufgabe 1}
 
-\author{Oliver Sengpiel \\
-        Laura Schüttpelz \\
-        Merlinde Claudia Tews}
-
 \begin{document}
 
 \maketitle
@@ -51,7 +47,7 @@ Analog dazu sind die folgenden Beweise.
 Hier muss noch ein Beweis rein.
 
 \underline{$\log n \asymp \log n^3$:}\\
-$\log n \in \mathcal{O}$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
+$\log n \in \mathcal{O}(\log n^3)$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
 n}{\log n^3} < \infty$ gilt. Für den Grenzwert von $\frac{\log n}{\log n^3}$ für
 $n \to \infty$ gilt:
 \[
@@ -60,6 +56,7 @@ $n \to \infty$ gilt:
 \]
 woraus folgt, dass die Behauptung wahr ist.
 
+
 \item[(b)]
 
 \begin{enumerate}
@@ -67,14 +64,15 @@ woraus folgt, dass die Behauptung wahr ist.
 blub
 \item[(ii)]
 	\begin{align*}
-		Behauptung: f \in O(g) &\Rightarrow g \in \omega(f)  
+		\text{Behauptung:} f \in O(g) &\Rightarrow g \in \omega(f) \\
 		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
-			\le \infty &\Rightarrow lim_{n \rightarrow \infty} inf 
-			\frac{f(n)}{g(n)} \Leftrightarrow g \in o(f) 
+			< \infty \Rightarrow lim_{n \rightarrow \infty} inf 
+			\frac{f(n)}{g(n)} \Leftrightarrow g \in o(f) \\
 		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
-			\le \infty &\Rightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} = 0 
+			< \infty \Rightarrow lim_{n \rightarrow \infty} sup
+                        \frac{f(n)}{g(n)} = 0 \\
 		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} = 0 
-			\le \infty 
+			< \infty 
 	\end{align*}
 \item[(iii)]
 blubblubb
