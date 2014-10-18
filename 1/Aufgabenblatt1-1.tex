@@ -1,3 +1,4 @@
+
 \documentclass{article}
 
 \usepackage[utf8]{inputenc} \usepackage[ngerman]{babel}
@@ -61,10 +62,19 @@ woraus folgt, dass die Behauptung wahr ist.
 
 \begin{enumerate}
 \item[(i)]
-blub
+
+\begin{align*}
+\text{Behauptung: }&B = F_n \ge 2^{0.5n} \\
+\text{Induktionsanfang: } &n= 6. F_n = 5 \ge 8 = 2^3 = 2^{0.5n} \\
+\text{Induktionsannahme: } &~Gelte~ B~ f"ur~ n. \\
+\text{Induktionsschritt: } &F_{n+1} \ge 2^{0.5*(n+1)} \\
+&F_n + F_{n-1} \ge 2^{0.5*n} * 2^{0.5} \\
+&F_{n-1} \ge 2^{0.5} \text{, da } F_n \text{ laut Induktionsannahme } \ge 2^{0.5*n}
+\end{align*}
+	
 \item[(ii)]
 	\begin{align*}
-		\text{Behauptung:} f \in O(g) &\Rightarrow g \in \omega(f) \\
+		\text{Behauptung: } f \in O(g) &\Rightarrow g \in \omega(f) \\
 		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} 
 			< \infty \Rightarrow lim_{n \rightarrow \infty} inf 
 			\frac{f(n)}{g(n)} \Leftrightarrow g \in o(f) \\
