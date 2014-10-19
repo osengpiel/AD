@@ -16,23 +16,6 @@
 
 \maketitle
 
-\begin{enumerate}
-\item[(a)]
-
-
-\documentclass{article}
-
-\usepackage[utf8]{inputenc} \usepackage[ngerman]{babel}
-
-\usepackage{amssymb} \usepackage{amsmath}
-
-\usepackage{latexsym}
-
-\title{Aufgabenblatt 1 - Aufgabe 1}
-
-\begin{document}
-
-\maketitle
 
 % blablabla
 \begin{enumerate}
@@ -49,8 +32,21 @@
 	
 
 \item[(b)]
-
-
+\begin{align*}
+\text{Behauptung: } &B = F_n \le 2^{c \cdot n} \\
+\text{Induktionsanfang: } & n = 0. F_n = 0 \le 2^{c \cdot 0} = 1 \\
+\text{Induktionsannahme: } &\text{Gelte B für n. } \\
+\text{Induktionsschritt: Zu zeigen: } F_{n+1} &\le 2^{c \cdot (n+1)} \\
+\text{Wenn } F_n + F_{n-1} \le 2^{c \cdot n} + 2^{c \cdot (n-1)} &\le 2^{c \cdot (n+1)}, \\
+\text{dann gilt auch } F_{n+1} = F_n + F_{n-1} &\le 2^{c \cdot (n+1)} \\
+\text{Zu zeigen: }  2^{c \cdot n} + 2^{c \cdot (n-1)} &\le 2^{c \cdot (n+1)} \\
+2^{c^n} + 2^{c \cdot n - c \cdot 1} &\le 2^{c^n} \cdot 2^c \\
+2^{c^n} + 2^{c \cdot n} \cdot 2^{c^{-1}} &\le 2^{c^n} \cdot 2^c \\
+1 + \frac{1}{2^c} &\le 2^c \\
+\Rightarrow c &\ge \frac{log(1+\sqrt(5))}{log(2)} -1 \\
+\Rightarrow c &\ge \approx 0.7 \\
+\text{Also gilt } &F_n \le 2^{c \cdot n} \text{ für } c \ge 0.7.
+\end{align*}
 \end{enumerate}
 
 
