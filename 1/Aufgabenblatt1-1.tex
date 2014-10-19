@@ -63,16 +63,19 @@ woraus folgt, dass die Behauptung wahr ist.
 
 \begin{enumerate}
 \item[(i)]
+	\begin{align*}
+	\text{Behauptung: } &\text{Für beliebige } b > 1 \text{ gilt: } log_b(n) \in \Theta(log_2n) \\
+	&\Leftrightarrow 0 < lim_{n \rightarrow \infty}~ inf \frac{log_b(n)}{log_2(n)} \le 
+		lim_{n \rightarrow \infty}~ sup \frac{log_b(n)}{log_2(n)} < \infty \\
+	\text{Für } &b=2 \text{ ist } 0 <  lim_{n \rightarrow \infty}~ inf \frac{log_b(n)}{log_2(n)} 
+		= lim_{n \rightarrow \infty}~ sup \frac{log_b(n)}{log_2(n)} = 1 < \infty \\
+	\text{Für } &b>2 \text{ ist } log_b(n) = \frac{log_2(n)}{log_2(b)} \\
+	&\Leftrightarrow 0 < lim_{n \rightarrow \infty}~ inf \frac{log_2(n)}{log_2(n)*log_2(b)} 
+		\le lim_{n \rightarrow \infty}~ sup \frac{1}{log_2(b)} \\
+	\text{Aber: } &lim_{n \rightarrow \infty}~ inf \frac{1}{log_2(b)} = 0  \\
+	\text{Also: } &\text{Für beliebige } b > 2 \text{ gilt: } log_b(n) \notin \Theta(log_2n) \\   
+	\end{align*}
 
-\begin{align*}
-\text{Behauptung: }&B = F_n \ge 2^{0.5n} \\
-\text{Induktionsanfang: } &n= 6. F_n = 5 \ge 8 = 2^3 = 2^{0.5n} \\
-\text{Induktionsannahme: } &~Gelte~ B~ f"ur~ n. \\
-\text{Induktionsschritt: } &F_{n+1} \ge 2^{0.5*(n+1)} \\
-&F_n + F_{n-1} \ge 2^{0.5*n} * 2^{0.5} \\
-&F_{n-1} \ge 2^{0.5} \text{, da } F_n \text{ laut Induktionsannahme } \ge 2^{0.5*n}
-\end{align*}
-	
 \item[(ii)]
 	\begin{align*}
 		\text{Behauptung: } f \in O(g) &\Rightarrow g \in \omega(f) \\
@@ -85,15 +88,17 @@ woraus folgt, dass die Behauptung wahr ist.
 		&\Leftrightarrow lim_{n \rightarrow \infty} sup \frac{f(n)}{g(n)} = 0 
 			< \infty 
 	\end{align*}
+
 \item[(iii)]
-\begin{align*}
-\text{Behauptung: } &f_c(n) := \sum_{i=0}^n c^i: f_c(n) \in \Theta(n) \Leftrightarrow c=1 \\
-&0 < lim_{n \rightarrow \infty} inf \frac{f_c(n)}{n} \le lim_{n \rightarrow \infty} sup \frac{f_c(n)}{n} < \infty \\
-&0 < lim_{n \rightarrow \infty} inf \frac{\sum_{i=0}^n c^i}{n} \le lim_{n \rightarrow \infty} sup \frac{\sum_{i=0}^i c^i}{n} < \infty \\
-&\text{Für } c > 1 \text{geht } \frac{f_c(n)}{n} \text{gegen } \infty \text{, für } c > 0 \text{geht }  \frac{f_c(n)}{n} \text{gegen 0.} \\
-\text{Also muss } c = 1 \text{ genau dann, wenn } f_c(n) \in \Theta(n).
-\end{align*}
+	\begin{align*}
+	\text{Behauptung: } &f_c(n) := \sum_{i=0}^n c^i: f_c(n) \in \Theta(n) \Leftrightarrow c=1 \\
+	&0 < lim_{n \rightarrow \infty} inf \frac{f_c(n)}{n} \le lim_{n \rightarrow \infty} sup \frac{f_c(n)}{n} < \infty \\
+	&0 < lim_{n \rightarrow \infty} inf \frac{\sum_{i=0}^n c^i}{n} \le lim_{n \rightarrow \infty} sup \frac{\sum_{i=0}^i c^i}{n} < \infty \\
+	&\text{Für } c > 1 \text{geht } \frac{f_c(n)}{n} \text{gegen } \infty \text{, für } c > 0 \text{geht }  \frac{f_c(n)}{n} \text{gegen 0.} \\
+	&\text{Also muss } c = 1 \text{ genau dann, wenn } f_c(n) \in \Theta(n).
+	\end{align*}
 \end{enumerate}
+
 
 \end{enumerate}
 \end{document}
