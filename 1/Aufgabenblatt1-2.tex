@@ -16,21 +16,45 @@
 
 \maketitle
 
-
-% blablabla
 \begin{enumerate}
 \item[(a)]
+Es gilt zu beweisen, dass $F_n \geq 2^{0.5 \cdot n}$ für alle $n \geq 6$ gilt.\\
+\\
+
+\underline{Induktionsanfang:} \quad $n = 6$ \\
+\begin{equation*}
+F_6 = 8 \geq 2^{0.5 \cdot 6} = 8
+\end{equation*}
+
+\underline{Induktionsannahme:} \quad $F_n \geq 2^{0.5 \cdot n}$ \\
+
+\underline{Induktionsschritt:} \quad $n \to n+1$ \\
+\begin{align*}
+F_{n+1} = F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} \cdot 2^{0.5 \cdot (n-1)} \\
+\Leftrightarrow F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} \cdot \left( 2^{0.5 \cdot
+n} + 2^{0.5 \cdot -1} \right) \\
+\Leftrightarrow F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} \cdot \left( 1 +
+\frac{1}{\sqrt{2}} \right)
+\end{align*}
+
+Nun gilt es noch zu zeigen, dass $F_{n+1} \geq 2^{0.5 \cdot n+1}$ gilt, indem
+wir zeigen, dass $2^{0.5 \cdot n} \cdot \left( 1 + \frac{1}{\sqrt{2}} \right)
+\geq 2^{0.5 \cdot n+1}$ gilt. (Man kann unschwer sehen, dass aus letzterer
+Ungleichung erstere folgt.)
 
 \begin{align*}
-\text{Behauptung: }&B = F_n \ge 2^{0.5n} \\
-\text{Induktionsanfang: } &n= 6. F_n = 5 \ge 8 = 2^3 = 2^{0.5n} \\
-\text{Induktionsannahme: } &~Gelte~ B~ f"ur~ n. \\
-\text{Induktionsschritt: } &F_{n+1} \ge 2^{0.5*(n+1)} \\
-&F_n + F_{n-1} \ge 2^{0.5*n} * 2^{0.5} \\
-&F_{n-1} \ge 2^{0.5} \text{, da } F_n \text{ laut Induktionsannahme } \ge 2^{0.5*n}
+2^{0.5 \cdot n} \cdot \left( 1 + \frac{1}{\sqrt{2}} \right) &\geq 2^{0.5 \cdot
+n+1} \\
+\Leftrightarrow 2^{0.5 \cdot n} \cdot \left( 1 + \frac{1}{\sqrt{2}} \right)
+&\geq 2^{0.5 \cdot n} \cdot \sqrt{2} \\
+\Leftrightarrow 1 + \frac{1}{\sqrt{2}} &\geq \sqrt{2} \\
+\Leftrightarrow \frac{1 + \sqrt{2}}{\sqrt{2}} &\geq \sqrt{2} \\
+\Leftrightarrow \frac{1 + \sqrt{2}}{\sqrt{2}} &\geq \frac{2}{\sqrt{2}} \\
+\Leftrightarrow 1 + \sqrt{2} &\geq 2
 \end{align*}
-	
 
+Da $\sqrt{2}$ größer als $1$ ist, ist $\sqrt{2}+1$ größer als $2$, woraus folgt,
+dass die Behauptung stimmt. \quad $\square$
 \item[(b)]
 \begin{align*}
 \text{Behauptung: } &B = F_n \le 2^{c \cdot n} \\
