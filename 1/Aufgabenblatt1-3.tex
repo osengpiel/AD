@@ -6,7 +6,7 @@
 
 \usepackage{latexsym}
 
-\title{Aufgabenblatt 1 - Aufgabe 1}
+\title{Aufgabenblatt 1 - Aufgabe 3}
 
 \author{Oliver Sengpiel \\
         Laura Schüttpelz \\
@@ -16,7 +16,34 @@
 
 \maketitle
 
-% blablabla
+\begin{enumerate}
+\item[(a)]
+
+\item[(b)]
+Man berechen $X^n$, indem man erst $X^2$ berechne, dies mit sich 
+selbst multipliziere ($\widehat{=} X^4$), dies wiederum mit sich 
+selbst multipliziere ($\widehat{=} X^8$)... 
+
+Damit benötigt man zB für $X^{64}$ nur 6 Multiplikationen, 
+dies entspricht einem Aufwand von $O(log_2(n))$.
+
+\item[(c)]
+Um $F_n$ mit dem Matrizen-Verfahren zu berechnen benötigt man 
+$(n-1) \cdot (8 \text{ Multiplikationen und } 4 \text{ Additionen})$ 
+um $\begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}^n$ zu berechnen, 
+sowie $4$ Multiplikationen und $2$ Additionen, um das Ergebnis mit 
+$\begin{pmatrix} F_0 \\ F_1 \end{pmatrix}$ zu verrechnen. 
+
+Dies ergibt eine benötigte Zeit von 
+\begin{align*}
+&O((n-1) \cdot (8 \cdot 
+64^{1.59} + 4 \cdot 64)+ 4 \cdot 64^{1.59} + 2 \cdot 64) \\ = 
+&O((n-\frac{1}{2}) \cdot 8 \cdot 64^{1.59} + (n-\frac{1}{2})\cdot 4 \cdot 64) \\ 
+= &O((8n-4)\cdot (64^{1.59 + 32}))
+\end{align*}  
+Dies ist immer noch linearer Aufwand, und damit asymptotisch 
+echt schneller als $O(n^2)$
+\end{enumerate}
 
 
 
