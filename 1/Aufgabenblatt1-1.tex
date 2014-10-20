@@ -45,7 +45,7 @@ Analog dazu sind die folgenden Beweise.
     1 \prec \log \log n \qquad \square
 \]
 
-\underline{$\log \log n \prec \log n$:}
+\underline{$\log \log n \prec \log n$:} \\
 Hier muss noch ein Beweis rein.
 
 \underline{$\log n \asymp \log n^3$:}\\
@@ -58,6 +58,52 @@ $n \to \infty$ gilt:
 \]
 woraus folgt, dass die Behauptung wahr ist.
 
+\underline{$\log n^3 \prec \log n^{\log n}$:} \\
+\begin{align*}
+    \lim_{n \to \infty} \frac{\log n^3}{\log n^{\log n}} &= \lim_{n \to \infty}
+        \frac{3 \cdot \log n}{\log n \cdot \log n} \\
+        &= \lim_{n \to \infty} \frac{3}{\log n} \\
+        &= 0 \qquad \square
+\end{align*}
+
+\underline{$\log n^{\log n} \prec n \log n$:} \\
+\begin{align*}
+    \lim_{n \to \infty} \frac{\log n^{\log n}}{n \log n} &= \lim_{n \to \infty}
+        \frac{\log n \cdot \log n}{n \log n} \\
+        &= \lim_{n \to \infty} \frac{\log n}{n} \qquad mit ~ l'Hospital \\
+        &= 0 \qquad \square
+\end{align*}
+
+\underline{$n \log n \prec n^{0.01}$:} \\
+\begin{align*}
+    \lim_{n \to \infty} \frac{n \log n}{n^{0.01}} &= \lim_{n \to \infty}
+        \frac{n \log n} \qquad l'Hospital \\
+        &= \lim_{n \to \infty} \frac{\frac{1}{n}}{\frac{1}{n^{0.99}}} \\
+        &= \lim_{n \to \infty} \frac{n^{0.99}}{n} \\
+        &= 0 \qquad \square
+\end{align*}
+
+\underline{$n^{0.01} \prec n^{\frac{1}{2}}$:} \\
+Da Polynome mit einem höheren Grad immer schneller Wachsen, als
+Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
+
+\underline{$n^{\frac{1}{2}} \prec n^8$:} \\
+Siehe vorheriger Beweis. $\quad \square$
+
+\underline{$n^8 \prec 2^n$:} \\
+Hier kommt noch ein Beweis hin.
+
+\underline{$2^n \prec 8^n$:} \\
+Hier kommt noch ein Beweis hin.
+
+\underline{$8^n \prec n!:$} \\
+Für $n \to n+1$ wird $n^8$ mit 8 multipliziert, $n!$ jedoch mit $n+1$. Deshalb
+steigt $n!$ auf Dauer stärker als $n^8$. (Beweis kann durch Induktion gemacht
+werden).
+
+\underline{$n! \prec n^n$:} \\
+Alle einzelnen Faktoren, außer dem $n$-ten sind bei $n!$ kleiner als bei $n^n$,
+weshalb letztere Funktion schneller steigt.
 
 \item[(b)]
 
