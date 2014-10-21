@@ -51,7 +51,7 @@ Analog dazu sind die folgenden Beweise.
 \begin{align*}
     &\lim_{n \to \infty} \frac{\log \log n }{\log n} \\
     \rightarrow &\lim_{n \to \infty} \frac{\frac{1}{log(n)} \cdot \frac{1}{n}}{\frac{1}{n}} \qquad mit ~ l'Hospital \\
-    \rightarrow &\lim_{n \to \infty} \frac{1}{\log n} = 0 \quad \quad \square \qquad 
+    \rightarrow &\lim_{n \to \infty} \frac{1}{\log n} = 0 \hfill \square
 \end{align*}
 und daraus folgt, dass {$\log \log n \prec \log n$:} gilt.\\
 
@@ -70,7 +70,7 @@ woraus folgt, dass die Behauptung wahr ist.
     \lim_{n \to \infty} \frac{\log n^3}{\log n^{\log n}} &= \lim_{n \to \infty}
         \frac{3 \cdot \log n}{\log n \cdot \log n} \\
         &= \lim_{n \to \infty} \frac{3}{\log n} \\
-        &= 0 \qquad \square
+        &= 0 \hfill \square
 \end{align*}
 
 \underline{$\log n^{\log n} \prec n \log n$:} \\
@@ -78,7 +78,7 @@ woraus folgt, dass die Behauptung wahr ist.
     \lim_{n \to \infty} \frac{\log n^{\log n}}{n \log n} &= \lim_{n \to \infty}
         \frac{\log n \cdot \log n}{n \log n} \\
         &= \lim_{n \to \infty} \frac{\log n}{n} \qquad mit ~ l'Hospital \\
-        &= 0 \qquad \square
+        &= 0 \hfill \square
 \end{align*}
 
 \underline{$n \log n \prec n^{0.01}$:} \\
@@ -87,7 +87,7 @@ woraus folgt, dass die Behauptung wahr ist.
         \frac{n \log n}{n^{0.01}} \qquad l'Hospital \\
         &= \lim_{n \to \infty} \frac{\frac{1}{n}}{\frac{1}{n^{0.99}}} \\
         &= \lim_{n \to \infty} \frac{n^{0.99}}{n} \\
-        &= 0 \qquad \square
+        &= 0 \hfill \square
 \end{align*}
 
 \underline{$n^{0.01} \prec n^{\frac{1}{2}}$:} \\
@@ -95,7 +95,7 @@ Da Polynome mit einem höheren Grad immer schneller Wachsen, als
 Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
 
 \underline{$n^{\frac{1}{2}} \prec n^8$:} \\
-Siehe vorheriger Beweis. $\quad \square$
+Siehe vorheriger Beweis. $\hfill \square$
 
 \underline{$n^8 \prec 2^n$:} \\
 \begin{align*}
@@ -103,14 +103,14 @@ Siehe vorheriger Beweis. $\quad \square$
         \frac{8n^7}{n \cdot 2^{2-1}} \qquad mit ~ l'Hospital (1-fache Anwendung) \\
         \vdots \\
         &= \lim_{n \to \infty} \frac{8!}{n! \cdot (n-8)! \cdot 2^{2-8}} \qquad mit ~ l'Hospital (8-fache Anwendung) \\
-        &= 0 \qquad \square
+        &= 0 \hfill \square
 \end{align*}
 
 \underline{$2^n \prec 8^n$:} \\
 \begin{align*}
     \lim_{n \to \infty} \frac{2^n}{8^n} &= \lim_{n \to \infty}
         \left( \frac{2}{8} \right)^n \\
-        &= 0 \qquad \square
+        &= 0 \hfill \square
 \end{align*}
 
 \underline{$8^n \prec n!:$} \\
