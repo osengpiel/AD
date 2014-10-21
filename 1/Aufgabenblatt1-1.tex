@@ -83,7 +83,7 @@ woraus folgt, dass die Behauptung wahr ist.
 \underline{$n \log n \prec n^{0.01}$:} \\
 \begin{align*}
     \lim_{n \to \infty} \frac{n \log n}{n^{0.01}} &= \lim_{n \to \infty}
-        \frac{n \log n} \qquad l'Hospital \\
+        \frac{n \log n}{n^{0.01}} \qquad l'Hospital \\
         &= \lim_{n \to \infty} \frac{\frac{1}{n}}{\frac{1}{n^{0.99}}} \\
         &= \lim_{n \to \infty} \frac{n^{0.99}}{n} \\
         &= 0 \qquad \square
@@ -100,7 +100,11 @@ Siehe vorheriger Beweis. $\quad \square$
 Hier kommt noch ein Beweis hin.
 
 \underline{$2^n \prec 8^n$:} \\
-Hier kommt noch ein Beweis hin.
+\begin{align*}
+    \lim_{n \to \infty} \frac{2^n}{8^n} &= \lim_{n \to \infty}
+        \left( \frac{2}{8} \right)^n \\
+        &= 0 \qquad \square
+\end{align*}
 
 \underline{$8^n \prec n!:$} \\
 Für $n \to n+1$ wird $n^8$ mit 8 multipliziert, $n!$ jedoch mit $n+1$. Deshalb
