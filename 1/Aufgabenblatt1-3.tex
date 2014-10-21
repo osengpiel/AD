@@ -16,7 +16,128 @@
 
 \begin{enumerate}
 \item[(a)]
+Zu beweisen: Es gilt für $n \geq 0$
+\[
+    \begin{pmatrix}
+        F_{n} \\ F_{n+1}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    ^n \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+\]
 
+\underline{Induktionsanfang:} \quad $n = 0$
+\begin{align*}
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    ^0 \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+    &=
+    \begin{pmatrix}
+        1 & 0 \\
+        0 & 1
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+    \\
+    &=
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+    \hfill \square
+\end{align*}
+
+\underline{Induktionsbehauptung:} \quad Es gilt für $n$:
+\begin{align*}   
+    \begin{pmatrix}
+        F_{n} \\ F_{n+1}
+    \end{pmatrix}
+    &=
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    ^n \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+\end{align*}
+
+\underline{Induktionsschritt:} \quad $n \to n+1$
+\begin{align*}   
+    \begin{pmatrix}
+        F_{n+1} \\ F_{n+2}
+    \end{pmatrix}
+    &=
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+        F_n \\ F_{n+1}
+    \end{pmatrix}
+    \\
+    &=
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    \cdot
+    \left[
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    ^n \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+    \right]
+    \\
+    &=
+    \left[
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    ^n 
+    \right]
+    \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+    \\
+    &=
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 1
+    \end{pmatrix}
+    ^{n+1} 
+    \cdot
+    \begin{pmatrix}
+        F_0 \\ F_1
+    \end{pmatrix}
+\end{align*}
+
+        
 \item[(b)]
 Man berechen $X^n$, indem man erst $X^2$ berechne, dies mit sich 
 selbst multipliziere ($\widehat{=} X^4$), dies wiederum mit sich 
