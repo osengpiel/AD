@@ -35,7 +35,7 @@ Zunächst gilt es zu beweisen, dass
 gilt. Der Beweis ist trivial, denn es ist
 \begin{align*}
     &\lim_{n \to \infty} \frac{\left( \frac{1}{n} \right)}{1} \\
-    \Leftrightarrow &\lim_{n \to \infty} \frac{1}{n} = 0 \quad \quad \square
+    \Leftrightarrow &\lim_{n \to \infty} \frac{1}{n} = 0 \hfill \square
 \end{align*}
 und daraus folgt, dass $\frac{1}{n} \prec 1$ gilt.\\
 Analog dazu sind die folgenden Beweise.
@@ -43,7 +43,7 @@ Analog dazu sind die folgenden Beweise.
 \underline{$1 \prec \log \log n$:}
 \[
     \frac{1}{\log \log n} \underset{n \to \infty}{\longrightarrow} 0 \Rightarrow
-    1 \prec \log \log n \qquad \square
+    1 \prec \log \log n \hfill \square
 \]
 
 \underline{$\log \log n \prec \log n$:} \\ %Ich kann das auch ausfuehrlicher mit $\frac{\frac{1}{log(n)} cdot \frac{1}{n}}{\frac{1}{n}}   \Leftrightarrow \frac{1}{log(n)$
@@ -60,13 +60,13 @@ n}{\log n^3} < \infty$ gilt. Für den Grenzwert von $\frac{\log n}{\log n^3}$ f�
 $n \to \infty$ gilt:
 \[
     \lim_{n \to \infty} \frac{\log n}{\log n^3} = \frac{\log n}{3 \cdot \log n}
-    = \frac{1}{3}
+    = \frac{1}{3} \hfill \square
 \]
 woraus folgt, dass die Behauptung wahr ist.
 
 \underline{$\log n^3 \prec n^{0.01}$:} \\
 \begin{align*}
-    \lim_{n \to \infty} \frac{\log n^3}{n^{0.01}} &= \lim_{n \to \infty}
+&~~    \lim_{n \to \infty} \frac{\log n^3}{n^{0.01}} &= \lim_{n \to \infty}
         \frac{3 \cdot \log n}{n^{0.01}} ~mit~l 'Hospital\\
         &= \lim_{n \to \infty} \frac{3 \cdot \frac{1}{n}}{0.01 \cdot \frac{1}{n^{0.99}}} \\
         &= \lim_{n \to \infty} \frac{n^{0.99}}{n} \\
@@ -77,11 +77,11 @@ woraus folgt, dass die Behauptung wahr ist.
 
 \underline{$n^{0.01} \prec n^{\frac{1}{2}}$:} \\
 Da Polynome mit einem höheren Grad immer schneller wachsen, als
-Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
+Polynome mit einem niedrigeren, folgt die Behauptung. $\hfill \square$
 
 \underline{$\sqrt{n} \prec \log n^{\log n}$:} \\
 \begin{align*}
-\lim_{n \to \infty} \frac{\sqrt{n}}{\log n^{ \log n}} ~mit~l'Hospital\\
+&~~\lim_{n \to \infty} \frac{\sqrt{n}}{\log n^{ \log n}} ~mit~l'Hospital\\
 	&= \lim_{n \to \infty} \frac{0.5 \cdot n^{-0.5}}{\log n +1} ~l 'Hospital\\
         &= \lim_{n \to \infty} \frac{-0.25 \cdot \frac{1}{n^{1.5}}}{\frac{1}{n}}  \\
 	&= \lim_{n \to \infty} \frac{n}{n^{1.5}} \\
