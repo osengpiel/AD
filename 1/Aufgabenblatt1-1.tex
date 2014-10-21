@@ -108,8 +108,11 @@ Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
 %\end{align*}
 
 \underline{$n \log n \prec n^8$:} \\
-
-
+\begin{align*}
+    \lim_{n \to \infty} \frac{n \log n}{n^8} &= \lim_{n \to \infty}
+        \frac{\log n}{n^7} \\
+\end{align*}
+Da jedes Polynom schneller steigt als $\log$, stimmt die Behauptung.
 
 \underline{$n^8 \prec 2^n$:} \\
 \begin{align*}
