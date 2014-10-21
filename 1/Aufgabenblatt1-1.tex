@@ -84,14 +84,18 @@ Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
 \lim_{n \to \infty} \frac{\sqrt{n}}{\log n^{ \log n}} ~mit~l'Hospital\\
 	&= \lim_{n \to \infty} \frac{0.5 \cdot n^{-0.5}}{\log n +1} ~l 'Hospital\\
         &= \lim_{n \to \infty} \frac{-0.25 \cdot \frac{1}{n^{1.5}}}{\frac{1}{n}}  \\
-	&= \lim_{n \to \infty} \frac{n}{n^{1.5}}
+	&= \lim_{n \to \infty} \frac{n}{n^{1.5}} \\
         &= 0 \hfill \square
 \end{align*}
 
 
 \underline{$\log n^{\log n} \prec n \log n$:} \\
 \begin{align*}
-   
+\lim_{n \to \infty} \frac{log (n^{log (n)})}{n \cdot log (n)} ~l'Hospital\\    
+	&=\lim_{n \to \infty} \frac{2 \cdot log(n) \cdot \frac{1}{n}}{log(n)+1} \\
+	&=\lim_{n \to \infty} \frac{(log(n))^2}{n \cdot log(n)}
+	&=\lim_{n \to \infty} \frac{1}{n} \\
+	&= 0 \hfill \square
 \end{align*}
 
 %\underline{$n \log n \prec n^{0.01}$:} \\
