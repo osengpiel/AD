@@ -46,8 +46,12 @@ Analog dazu sind die folgenden Beweise.
     1 \prec \log \log n \qquad \square
 \]
 
-\underline{$\log \log n \prec \log n$:} \\
-Hier muss noch ein Beweis rein.
+\underline{$\log \log n \prec \log n$:} \\ %Ich kann das auch ausfuehrlicher mit $\frac{\frac{1}{log(n)} cdot \frac{1}{n}}{\frac{1}{n}}   \Leftrightarrow \frac{1}{log(n)$
+\begin{align*}
+    &\lim_{n \to \infty} \frac{\log \log n }{\log n} \\
+    \Leftrightarrow &\lim_{n \to \infty} \frac{1}{\log n} = 0 \quad \quad \square
+\end{align*}
+und daraus folgt, dass {$\log \log n \prec \log n$:} gilt.\\
 
 \underline{$\log n \asymp \log n^3$:}\\
 $\log n \in \mathcal{O}(\log n^3)$ gilt genau dann, wenn $0 < \lim_{n \to \infty} \frac{\log
