@@ -98,7 +98,13 @@ Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
 Siehe vorheriger Beweis. $\quad \square$
 
 \underline{$n^8 \prec 2^n$:} \\
-Hier kommt noch ein Beweis hin.
+\begin{align*}
+    \lim_{n \to \infty} \frac{n^8}{2^n} &= \lim_{n \to \infty}
+        \frac{8n^7}{n \cdot 2^{2-1}} \qquad mit ~ l'Hospital (1-fache Anwendung) \\
+        \vdots \\
+        &= \lim_{n \to \infty} \frac{8!}{n! \cdot (n-8)! \cdot 2^{2-8}} \qquad mit ~ l'Hospital (8-fache Anwendung) \\
+        &= 0 \qquad \square
+\end{align*}
 
 \underline{$2^n \prec 8^n$:} \\
 \begin{align*}
