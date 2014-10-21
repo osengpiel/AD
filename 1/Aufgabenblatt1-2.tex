@@ -28,9 +28,9 @@ F_6 = 8 \geq 2^{0.5 \cdot 6} = 8
 
 \underline{Induktionsschritt:} \quad $n \to n+1$ \\
 \begin{align*}
-F_{n+1} = F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} \cdot 2^{0.5 \cdot (n-1)} \\
-\Leftrightarrow F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} \cdot \left( 2^{0.5 \cdot
-n} + 2^{0.5 \cdot -1} \right) \\
+F_{n+1} = F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} +  2^{0.5 \cdot (n-1)} \\
+\Leftrightarrow F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} + \left( 2^{0.5 \cdot
+n} \cdot  2^{0.5 \cdot -1} \right) \\
 \Leftrightarrow F_{n} + F_{n-1} &\geq 2^{0.5 \cdot n} \cdot \left( 1 +
 \frac{1}{\sqrt{2}} \right)
 \end{align*}
