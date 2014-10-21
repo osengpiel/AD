@@ -15,14 +15,13 @@
 
 \maketitle
 
-% blablabla
 \begin{enumerate}
 \item[(a)]
     \begin{align*}
         &\frac{1}{n} \prec 1 \prec \log \log n \prec \log n \asymp \log n^3 \prec
-        \log n^{\log n} \prec n^{0.01} \\
-        &\text{und} n^{0.01} \prec \sqrt{n} \quad n \log n \prec \prec n^8
-        \prec 2^n \prec 8^n \prec n^n \prec n!
+        n^{0.01} \prec \sqrt{n}  \\
+        \text{und} \quad &\sqrt{n} \prec \log n^{\log n} \prec n \log n \prec n^8 \prec 
+        2^n \prec 8^n \prec n! \prec n^n
     \end{align*}
 
 
@@ -65,13 +64,19 @@ $n \to \infty$ gilt:
 \]
 woraus folgt, dass die Behauptung wahr ist.
 
-\underline{$\log n^3 \prec \log n^{\log n}$:} \\
-\begin{align*}
-    \lim_{n \to \infty} \frac{\log n^3}{\log n^{\log n}} &= \lim_{n \to \infty}
-        \frac{3 \cdot \log n}{\log n \cdot \log n} \\
-        &= \lim_{n \to \infty} \frac{3}{\log n} \\
-        &= 0 \hfill \square
-\end{align*}
+\underline{$\log n^3 \prec n^{0.01}$:} \\
+%\begin{align*}
+%    \lim_{n \to \infty} \frac{\log n^3}{\log n^{\log n}} &= \lim_{n \to \infty}
+%        \frac{3 \cdot \log n}{\log n \cdot \log n} \\
+%        &= \lim_{n \to \infty} \frac{3}{\log n} \\
+%        &= 0 \hfill \square
+%\end{align*}
+
+\underline{$n^{0.01} \prec n^{\frac{1}{2}}$:} \\
+Da Polynome mit einem höheren Grad immer schneller Wachsen, als
+Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
+
+\underline{$\sqrt{n} \prec \log n^{\log n}$:} \\
 
 \underline{$\log n^{\log n} \prec n \log n$:} \\
 \begin{align*}
@@ -81,21 +86,16 @@ woraus folgt, dass die Behauptung wahr ist.
         &= 0 \hfill \square
 \end{align*}
 
-\underline{$n \log n \prec n^{0.01}$:} \\
-\begin{align*}
-    \lim_{n \to \infty} \frac{n \log n}{n^{0.01}} &= \lim_{n \to \infty}
-        \frac{n \log n}{n^{0.01}} \qquad l'Hospital \\
-        &= \lim_{n \to \infty} \frac{\frac{1}{n}}{\frac{1}{n^{0.99}}} \\
-        &= \lim_{n \to \infty} \frac{n^{0.99}}{n} \\
-        &= 0 \hfill \square
-\end{align*}
+%\underline{$n \log n \prec n^{0.01}$:} \\
+%\begin{align*}
+%    \lim_{n \to \infty} \frac{n \log n}{n^{0.01}} &= \lim_{n \to \infty}
+%        \frac{n \log n}{n^{0.01}} \qquad l'Hospital \\
+%        &= \lim_{n \to \infty} \frac{\frac{1}{n}}{\frac{1}{n^{0.99}}} \\
+%        &= \lim_{n \to \infty} \frac{n^{0.99}}{n} \\
+%        &= 0 \hfill \square
+%\end{align*}
 
-\underline{$n^{0.01} \prec n^{\frac{1}{2}}$:} \\
-Da Polynome mit einem höheren Grad immer schneller Wachsen, als
-Polynome mit einem niedrigeren, folgt die Behauptung. $\quad \square$
-
-\underline{$n^{\frac{1}{2}} \prec n^8$:} \\
-Siehe vorheriger Beweis. $\hfill \square$
+\underline{$n \log n \prec n^8$:} \\
 
 \underline{$n^8 \prec 2^n$:} \\
 \begin{align*}
